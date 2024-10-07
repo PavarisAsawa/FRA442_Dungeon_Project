@@ -364,8 +364,21 @@
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/MouseCamLook.cs"
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/PlayerMovement.cs"
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/ScreenshotMaker.cs"
+"Assets/Kawaii Slimes/Cameras/Scripts/AbstractTargetFollower.cs"
+"Assets/Kawaii Slimes/Cameras/Scripts/FreeLookCam.cs"
+"Assets/Kawaii Slimes/Cameras/Scripts/PivotBasedCameraRig.cs"
+"Assets/Kawaii Slimes/Scripts/AI/EnemyAi.cs"
+"Assets/Kawaii Slimes/Scripts/AI/Face.cs"
+"Assets/Kawaii Slimes/Scripts/GameManager.cs"
+"Assets/KenAssets/Scripts/AttackScript.cs"
+"Assets/KenAssets/Scripts/EnemyProperty.cs"
+"Assets/KenAssets/Scripts/FollowingCamera.cs"
+"Assets/KenAssets/Scripts/PatrolScript.cs"
+"Assets/KenAssets/Scripts/PlayerProperty.cs"
+"Assets/KenAssets/Scripts/VisionSystem.cs"
 "Assets/Script/HealthBar.cs"
 "Assets/Script/PlayerController.cs"
+"Assets/Script/SlimeAi.cs"
 -langversion:9.0
 /deterministic
 /optimize+
