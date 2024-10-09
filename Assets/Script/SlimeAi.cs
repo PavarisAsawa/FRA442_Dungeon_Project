@@ -21,6 +21,9 @@ public class SlimeAi : MonoBehaviour
 
     public enum WalkType { Patroll, ToOrigin, ExploreRandom }
     private WalkType walkType;
+    public float maxHealth = 100f;
+    public float slimeHealth = 100f;
+    private bool isTakingDamage = false;
 
     void Start()
     {
@@ -168,10 +171,10 @@ public class SlimeAi : MonoBehaviour
             // When Animation ended check distance between current position and first position 
             //if it > 1 AI will back to first position 
 
-            float distanceOrg = Vector3.Distance(transform.position, originPos);
-            if (distanceOrg > 1f)
+           if (message.Equals("AnimationDamageEnded"))
             {
-                walkType = WalkType.ToOrigin;
+                // หลังจากอนิเมชันการโดนตีจบลง ให้ Slime กลับไปเดินสุ่มต่อ
+                walkType = WalkType.ExploreRandom;
                 currentState = SlimeAnimationState.Walk;
             }
             else currentState = SlimeAnimationState.Idle;
@@ -220,5 +223,33 @@ public class SlimeAi : MonoBehaviour
         // ถ้าไม่สามารถสุ่มจุดที่อยู่ห่างพอได้หลังจาก 30 ครั้ง ให้ส่งค่า Vector3.zero กลับไป
         result = Vector3.zero;
         return false;
+    }
+    public void TakeDamage(float damageAmount)
+    {
+        // ลดค่า HP ของ Slime
+        slimeHealth -= damageAmount;
+
+        // แสดงอนิเมชันการโดนตี
+        animator.SetTrigger("Damage");
+        animator.SetInteger("DamageType", 1);
+
+        // ตรวจสอบว่า Slime ตายหรือไม่
+        if (slimeHealth <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            // รีเซ็ตการเคลื่อนไหวหลังจากการโจมตีจบ
+            walkType = WalkType.ExploreRandom;
+            currentState = SlimeAnimationState.Walk;
+        }
+    }
+
+
+    void Die()
+    {
+        // กำหนดให้ Slime ตาย
+        Destroy(gameObject);  // ทำลาย GameObject เมื่อ Slime ตาย
     }
 }

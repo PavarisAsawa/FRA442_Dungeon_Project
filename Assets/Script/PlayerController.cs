@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     private float gravity = -9.81f;
     private bool isGrounded;
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
 
     void Start()
     {
@@ -23,6 +26,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Check if the player is grounded
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;  // Reset velocity when grounded
+        }
+
         // Input for movement
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
@@ -30,15 +41,15 @@ public class PlayerController : MonoBehaviour
         // Determine movement direction
         Vector3 moveDirection = new Vector3(horizontalMovement, 0, verticalMovement).normalized;
 
-        // Check if we have movement input
+        // Check if there is movement input
         if (moveDirection.magnitude >= 0.1f)
         {
-            // Calculate the target angle based on movement input and rotate the character
+            // Calculate the target angle and smoothly rotate the character
             float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref rotationSpeed, 0.1f);
             transform.rotation = Quaternion.Euler(0, angle, 0);
 
-            // Move the character in the direction of movement
+            // Move the character
             Vector3 move = transform.forward * movementSpeed * Time.deltaTime;
             characterController.Move(move);
 
