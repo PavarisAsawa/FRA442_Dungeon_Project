@@ -10,6 +10,8 @@ public class PlayerControl : MonoBehaviour
     private Animator animator;
 
     private float currentSpeed;
+    public Transform cameraTransform; // กล้องที่จะใช้ในการคำนวณทิศทาง
+
 
     private Vector3 velocity = Vector3.zero;
     private float gravity = -9.81f;
@@ -69,9 +71,16 @@ public class PlayerControl : MonoBehaviour
                     animator.SetBool("isRunning", true);
                 }
 
-                transform.rotation = Quaternion.LookRotation(moveDirection);
-                Vector3 move = transform.forward * currentSpeed * Time.deltaTime;
-                characterController.Move(move);
+                // คำนวณมุมทิศทางจากกล้อง
+                float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
+                Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
+
+                // หมุนตัวละครไปตามทิศทางเป้าหมายทันที
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
+
+                // คำนวณทิศทางการเคลื่อนที่ใหม่จากการหมุน
+                Vector3 move = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
+                characterController.Move(move * currentSpeed * Time.deltaTime);
             }
             else
             {
