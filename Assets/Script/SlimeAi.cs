@@ -1,6 +1,8 @@
 ﻿
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
+using System.Collections.Generic;
 
 // SlimeAnimationState { Idle,Walk,Jump,Attack,Damage}
 
@@ -12,24 +14,40 @@ public class SlimeAi : MonoBehaviour
 
     public Animator animator;
     public NavMeshAgent agent;
-    public Transform[] waypoints;
     public int damType;
 
     private bool move;
     private Material faceMaterial;
     private Vector3 originPos;
 
-    public enum WalkType { Patroll, ToOrigin, ExploreRandom }
+    public enum WalkType { Patroll, ToOrigin, ExploreRandom, Chassing }
     private WalkType walkType;
     public float maxHealth = 100f;
     public float slimeHealth = 100f;
     private bool isTakingDamage = false;
+    public float AttackDamage = 10;
+
+    // Vision System Variable
+    public float viewRadius = 10f;  // ระยะการมองเห็น
+    public float attackingViewRadius = 15f;
+    [Range(0, 360)] public float viewAngle = 120f;  // มุมมอง (FOV)
+    public LayerMask targetMask;    // เลเยอร์ของวัตถุที่ต้องการตรวจสอบ
+    public LayerMask obstacleMask;  // เลเยอร์ของวัตถุที่เป็นสิ่งกีดขวาง
+
+    public List<Transform> visibleTargets = new List<Transform>(); // วัตถุที่มองเห็นได้
+
+    [HideInInspector]
+    public Transform targetTransform;
+
+    [HideInInspector]
+    public bool playerDetected;
 
     void Start()
     {
         originPos = transform.position;
         faceMaterial = SmileBody.GetComponent<Renderer>().materials[1];
         walkType = WalkType.ExploreRandom;
+        StartCoroutine("FindTargetsWithDelay", 0.2f);  // ค้นหาทุกๆ 0.2 วินาที
     }
 
     void SetFace(Texture tex)
@@ -102,6 +120,17 @@ public class SlimeAi : MonoBehaviour
                         }
                     }
                 }
+                else if (walkType == WalkType.Chassing && targetTransform != null)
+                {
+                    // ไล่ตามเป้าหมาย
+                    agent.SetDestination(targetTransform.position);
+
+                    // ถ้า Slime วิ่งไล่ตามถึงเป้าหมาย ให้เปลี่ยนไป Attack
+                    if (agent.remainingDistance < agent.stoppingDistance + 4.0f)
+                    {
+                        currentState = SlimeAnimationState.Attack;
+                    }
+                }
                 else
                 {
                     // agent reaches the destination
@@ -128,9 +157,15 @@ public class SlimeAi : MonoBehaviour
 
             case SlimeAnimationState.Attack:
 
-                if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack")) return;
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                {
+                    currentState = SlimeAnimationState.Walk;
+                    walkType = WalkType.Chassing;
+                    return;
+                }
                 StopAgent();
                 SetFace(faces.attackFace);
+                DealDamageToPlayer();
                 animator.SetTrigger("Attack");
 
                 // Debug.Log("Attacking");
@@ -171,7 +206,7 @@ public class SlimeAi : MonoBehaviour
             // When Animation ended check distance between current position and first position 
             //if it > 1 AI will back to first position 
 
-           if (message.Equals("AnimationDamageEnded"))
+            if (message.Equals("AnimationDamageEnded"))
             {
                 // หลังจากอนิเมชันการโดนตีจบลง ให้ Slime กลับไปเดินสุ่มต่อ
                 walkType = WalkType.ExploreRandom;
@@ -184,7 +219,11 @@ public class SlimeAi : MonoBehaviour
 
         if (message.Equals("AnimationAttackEnded"))
         {
-            currentState = SlimeAnimationState.Idle;
+            if (!playerDetected)
+            {
+                walkType = WalkType.ExploreRandom;
+            }
+            currentState = SlimeAnimationState.Walk;
         }
 
         if (message.Equals("AnimationJumpEnded"))
@@ -224,7 +263,7 @@ public class SlimeAi : MonoBehaviour
         result = Vector3.zero;
         return false;
     }
-    public void TakeDamage(float damageAmount)
+    public void SlimeTakeDamage(float damageAmount)
     {
         // ลดค่า HP ของ Slime
         slimeHealth -= damageAmount;
@@ -252,4 +291,102 @@ public class SlimeAi : MonoBehaviour
         // กำหนดให้ Slime ตาย
         Destroy(gameObject);  // ทำลาย GameObject เมื่อ Slime ตาย
     }
+    IEnumerator FindTargetsWithDelay(float delay)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(delay);
+            FindVisibleTargets();  // ค้นหาวัตถุที่มองเห็น
+        }
+    }
+
+    void FindVisibleTargets()
+    {
+        visibleTargets.Clear();  // ล้างรายการวัตถุที่มองเห็น
+
+        // ตรวจสอบสถานะ ถ้าเป็น Attacking ให้ใช้ attackingViewRadius และมุมมอง 360 องศา
+        float currentViewRadius = (currentState == SlimeAnimationState.Attack) ? attackingViewRadius : viewRadius;
+        float currentViewAngle = (currentState == SlimeAnimationState.Attack) ? 360f : viewAngle;
+
+        Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, currentViewRadius, targetMask);
+        playerDetected = false;
+
+        foreach (Collider target in targetsInViewRadius)
+        {
+            Transform targetTF = target.transform;
+            Vector3 dirToTarget = (targetTF.position - transform.position).normalized;
+
+            // ตรวจสอบว่าตัวละครอยู่ในมุมมองหรือไม่
+            if (Vector3.Angle(transform.forward, dirToTarget) < currentViewAngle / 2)
+            {
+                float distanceToTarget = Vector3.Distance(transform.position, targetTF.position);
+
+                // ตรวจสอบว่ามีสิ่งกีดขวางหรือไม่
+                if (!Physics.Raycast(transform.position, dirToTarget, distanceToTarget, obstacleMask))
+                {
+                    visibleTargets.Add(targetTF);  // ถ้าไม่มีสิ่งกีดขวาง ถือว่ามองเห็น
+                    if (target.CompareTag("Player"))
+                    {
+                        playerDetected = true;
+                        targetTransform = targetTF;
+                        currentState = SlimeAnimationState.Walk;
+                        walkType = WalkType.Chassing;
+                        // Debug.Log("check");
+                    }
+                }
+            }
+        }
+
+        // ถ้าไม่เจอ Player และอยู่ในโหมด Attacking ให้กลับไปโหมด Patrol
+        if (!playerDetected)
+        {
+            walkType = WalkType.ExploreRandom;
+        }
+    }
+    public void DealDamageToPlayer()
+    {
+        // RaycastHit hit;
+
+        // if (Physics.Raycast(transform.position, transform.forward, out hit, 70.0f))
+        // {
+        //     Debug.Log("check");
+        //     if (hit.collider.CompareTag("Player"))
+        //     {
+        //         Debug.Log("check2");
+        //         PlayerControl player = hit.collider.GetComponent<PlayerControl>();
+        //         if (player != null)
+        //         {
+        //             Debug.Log("check3");
+        //             player.PlayerTakeDamage(AttackDamage);
+        //         }
+        //     }
+        // }
+
+        Vector3 boxHalfExtents = new Vector3(3.0f, 3.0f, 3.0f);  // ขนาดของกล่อง (ครึ่งหนึ่งของขนาดจริง)
+        RaycastHit[] hits = Physics.BoxCastAll(transform.position, boxHalfExtents, transform.forward, Quaternion.identity, 5.0f);
+
+        if (hits.Length > 0)  // ตรวจสอบว่ามีการชนกับวัตถุใดๆ หรือไม่
+        {
+            foreach (RaycastHit hit in hits)  // ลูปผ่านวัตถุที่ชนทั้งหมด
+            {
+                Debug.Log("Hit object: " + hit.collider.name);
+
+                // ตรวจสอบว่ามี Tag เป็น "Player"
+                if (hit.collider.CompareTag("Player"))
+                {
+                    Debug.Log("Hit player object: " + hit.collider.name);
+                    PlayerControl player = hit.collider.GetComponent<PlayerControl>();
+                    if (player != null)
+                    {
+                        Debug.Log("Dealing damage to player");
+                        player.PlayerTakeDamage(AttackDamage);  // ทำดาเมจ
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
 }

@@ -23,9 +23,10 @@ public class Player : MonoBehaviour
                 if (slime != null)
                 {
                     // ลด HP ของ Slime
-                    slime.TakeDamage(AttactDamage);
+                    slime.SlimeTakeDamage(AttactDamage);
                 }
             }
         }
     }
+    
 }

@@ -107,7 +107,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     // ฟังก์ชันสำหรับการรับความเสียหายและเรียกใช้อนิเมชันโดนตี
-    public void TakeDamage(float damage)
+    public void PlayerTakeDamage(float damage)
     {
         if (isDead) return;
 

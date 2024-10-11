@@ -525,8 +525,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 100
   AttactDamage: 20
-  runSpeed: 10
-  sprintSpeed: 15
+  runSpeed: 12
+  sprintSpeed: 18
 --- !u!1 &990088248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 643768574647878842, guid: 283547228c42c864881beab92e2b0ed7, type: 3}
@@ -6385,11 +6385,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7305006342540860669, guid: 283547228c42c864881beab92e2b0ed7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7305006342540860669, guid: 283547228c42c864881beab92e2b0ed7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.86
+      value: 16.9
       objectReference: {fileID: 0}
     - target: {fileID: 7305006342540860669, guid: 283547228c42c864881beab92e2b0ed7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6418,6 +6418,14 @@ PrefabInstance:
     - target: {fileID: 7305006342540860669, guid: 283547228c42c864881beab92e2b0ed7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588270895537021589, guid: 283547228c42c864881beab92e2b0ed7, type: 3}
+      propertyPath: targetMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588270895537021589, guid: 283547228c42c864881beab92e2b0ed7, type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -44,7 +44,7 @@ public class Sword : MonoBehaviour
                 if (player != null)
                 {
                     // ส่งค่าความเสียหายจากผู้เล่นไปให้ Slime
-                    slime.TakeDamage(player.AttactDamage);
+                    slime.SlimeTakeDamage(player.AttactDamage);
                 }
                 else
                 {
