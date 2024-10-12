@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ImjaiScene.unity
+- path: Assets/Scenes/DungeonScenes.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

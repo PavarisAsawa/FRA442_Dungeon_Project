@@ -10,6 +10,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private Camera cam;
 
+    [SerializeField]
     private float distance = 20.0f;
     private float currentX = 0.0f;
     private float currentY = 0.0f;
@@ -36,12 +37,12 @@ public class ThirdPersonCamera : MonoBehaviour
         // Zoom in/out using scroll wheel
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            distance += 0.2f;
+            distance += 0.4f;
         }
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            distance -= 0.2f;
+            distance -= 0.4f;
         }
     }
 
