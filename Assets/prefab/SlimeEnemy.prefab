@@ -136,6 +136,8 @@ MonoBehaviour:
   visibleTargets: []
   targetTransform: {fileID: 0}
   playerDetected: 0
+  attackCooldown: 1
+  BloodEffect: {fileID: 4840070116914301980, guid: f54f68d5fea7ede43b0765713eef6812, type: 3}
 --- !u!54 &3627865967836350678
 Rigidbody:
   m_ObjectHideFlags: 0
