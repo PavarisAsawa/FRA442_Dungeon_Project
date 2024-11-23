@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float playerMaxHealth = 100f;
     public float playerHealth = 100f;
-    public float AttactDamage = 20f;
+    public float AttackDamage = 20f;
     public float runSpeed = 10;
     public float sprintSpeed = 15;
 
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
                 if (slime != null)
                 {
                     // ลด HP ของ Slime
-                    slime.SlimeTakeDamage(AttactDamage);
+                    slime.SlimeTakeDamage(AttackDamage);
                 }
             }
         }

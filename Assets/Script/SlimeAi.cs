@@ -293,7 +293,7 @@ public class SlimeAi : MonoBehaviour
             currentState = SlimeAnimationState.Walk;
         }
     }
-    public void PlayEffect()
+    private void PlayEffect()
     {
         StartCoroutine("EffectLoop");
     }
