@@ -2380,6 +2380,8 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  hitCooldown: 1.5
+  gameOverCanvasPrefab: {fileID: 4840070116914301980, guid: f54f68d5fea7ede43b0765713eef6812, type: 3}
 --- !u!114 &6723646178078775804
 MonoBehaviour:
   m_ObjectHideFlags: 0

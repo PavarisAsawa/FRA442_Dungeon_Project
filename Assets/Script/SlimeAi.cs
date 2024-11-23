@@ -49,6 +49,8 @@ public class SlimeAi : MonoBehaviour
     // Track previous behavior
     private WalkType previousWalkType;
 
+    public GameObject BloodEffect;
+
     void Start()
     {
         originPos = transform.position;
@@ -277,6 +279,7 @@ public class SlimeAi : MonoBehaviour
         // แสดงอนิเมชันการโดนตี
         animator.SetTrigger("Damage");
         animator.SetInteger("DamageType", 1);
+        PlayEffect();
 
         // ตรวจสอบว่า Slime ตายหรือไม่
         if (slimeHealth <= 0)
@@ -289,6 +292,19 @@ public class SlimeAi : MonoBehaviour
             walkType = WalkType.ExploreRandom;
             currentState = SlimeAnimationState.Walk;
         }
+    }
+    public void PlayEffect()
+    {
+        StartCoroutine("EffectLoop");
+    }
+	
+
+    IEnumerator EffectLoop()
+    {
+        float loopTimeLimit = 0.7f;
+        GameObject effectPlayer = (GameObject) Instantiate(BloodEffect, transform.position, transform.rotation);
+        yield return new WaitForSeconds(loopTimeLimit);
+        Destroy (effectPlayer);
     }
 
 
