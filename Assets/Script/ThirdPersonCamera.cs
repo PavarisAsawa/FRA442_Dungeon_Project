@@ -50,9 +50,25 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         Vector3 dir = new Vector3(0, 0, -distance);
         Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
-        camTransform.position = lookAt.position + rotation * dir;
 
+        // คำนวณตำแหน่งที่ต้องการของกล้องตามการหมุน
+        Vector3 desiredCameraPosition = lookAt.position + rotation * dir;
+
+        // Raycast เพื่อหาว่ามีสิ่งกีดขวางระหว่างผู้เล่นกับตำแหน่งกล้องที่ต้องการหรือไม่
+        RaycastHit hit;
+        if (Physics.Raycast(lookAt.position, (desiredCameraPosition - lookAt.position).normalized, out hit, distance))
+        {
+            // ปรับระยะกล้องเพื่อให้ไม่ทะลุสิ่งกีดขวาง
+            camTransform.position = lookAt.position + (rotation * dir.normalized * hit.distance);
+        }
+        else
+        {
+            // หากไม่มีสิ่งกีดขวาง ใช้ตำแหน่งกล้องปกติ
+            camTransform.position = desiredCameraPosition;
+        }
+
+        // ตั้งให้กล้องมองไปที่ผู้เล่น
         camTransform.LookAt(lookAt.position);
-    }
+       }
 
 }

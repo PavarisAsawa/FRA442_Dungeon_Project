@@ -12,7 +12,6 @@ public class PlayerControl : MonoBehaviour
     private float currentSpeed;
     public Transform cameraTransform; // กล้องที่จะใช้ในการคำนวณทิศทาง
 
-
     private Vector3 velocity = Vector3.zero;
     private float gravity = -9.81f;
     private bool isGrounded;
@@ -22,7 +21,9 @@ public class PlayerControl : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
+    public float hitCooldown = 1.5f; // Duration of the cooldown period
+    private bool isHit = false; // Flag to track if hit animation is playing
+    public GameObject gameOverCanvasPrefab; // Assign this in the Inspector
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -45,7 +46,7 @@ public class PlayerControl : MonoBehaviour
 
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = 0.0f;
         }
 
         // Handle movement and attack
@@ -109,23 +110,62 @@ public class PlayerControl : MonoBehaviour
     // ฟังก์ชันสำหรับการรับความเสียหายและเรียกใช้อนิเมชันโดนตี
     public void PlayerTakeDamage(float damage)
     {
-        if (isDead) return;
+        if (isDead || isHit) return;  // Skip if dead or already in hit animation or invincible
 
         player.playerHealth -= damage;
-
-        // Trigger the hit reaction animation
-        animator.SetTrigger("isHit");
+        isHit = true;  // Set the hit flag to prevent multiple triggers
+        animator.SetTrigger("isHit");  // Trigger the hit animation
+        Debug.Log("Player takes damage, playing hit animation.");
 
         if (player.playerHealth <= 0)
         {
             Die();
         }
+        else
+        {
+            StartCoroutine(HitCooldownRoutine());
+        }
     }
 
+    // Cooldown coroutine to reset the isHit flag after a short period and apply invincibility
+    IEnumerator HitCooldownRoutine()
+    {
+        yield return new WaitForSeconds(hitCooldown); // รอให้อนิเมชันการโดนตีเล่นจนจบ
+
+        // ตรวจสอบว่าอนิเมชัน "isHit" เล่นเสร็จสมบูรณ์ก่อนรีเซ็ต
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Hit") && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            yield return null; // รอจนกว่าอนิเมชันจะจบ
+        }
+
+        animator.ResetTrigger("isHit"); // รีเซ็ตทริกเกอร์ isHit
+        Debug.Log("Hit animation completed.");
+
+        // ระยะเวลาปลอดภัยหลังจากโดนตี
+        yield return new WaitForSeconds(3.0f); // ปลอดภัยเป็นเวลา 3 วินาที
+        isHit = false;  // Reset the flag to allow a new hit animation
+        Debug.Log("Invincibility period ended, player can take damage again.");
+    }
+    
     void Die()
     {
         isDead = true;
         animator.SetBool("isDead", true);
-        characterController.enabled = false;
+
+        // หยุดการอัปเดตความเร็วเพื่อไม่ให้แรงโน้มถ่วงมีผล
+        velocity = Vector3.zero;
+
+        // หยุดการเคลื่อนที่ของ CharacterController
+        characterController.Move(Vector3.zero);
+
+        // แสดง Game Over Canvas
+        if (gameOverCanvasPrefab != null)
+        {
+            Instantiate(gameOverCanvasPrefab); // สร้าง Game Over Canvas ขึ้นมา
+        }
+        else
+        {
+            Debug.LogWarning("Game Over Canvas Prefab is not assigned in the Inspector!");
+        }
     }
 }

@@ -14,8 +14,12 @@ public class HealthBar : MonoBehaviour
         slider.value = player.playerHealth;
     }
 
-    public void SetHealth(int health)
+    public void SetHealth()
     {
         slider.value = player.playerHealth;
+    }
+
+    void Update() {
+        SetHealth();
     }
 }

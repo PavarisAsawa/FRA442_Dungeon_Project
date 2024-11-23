@@ -506,6 +506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 7586093321967142111, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.49999988
@@ -557,6 +561,10 @@ PrefabInstance:
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9222988866110790705, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -851,6 +859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 390
@@ -972,6 +984,10 @@ PrefabInstance:
     - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
       propertyPath: m_Name
       value: Balcony (08)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1145,6 +1161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Corner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.47
@@ -1292,6 +1312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony_Post (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 434.094
@@ -1436,7 +1460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104715981}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1555,6 +1579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Wall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7586093321967142111, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.49999988
@@ -1606,6 +1634,10 @@ PrefabInstance:
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9222988866110790705, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1688,7 +1720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 129426636}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1721,6 +1753,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1928,6 +1964,10 @@ PrefabInstance:
     - target: {fileID: 6880993203750005610, guid: a08fc365a6eb3a4479ec69b573a6c7ad, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Corner_ Inverted (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880993203750005610, guid: a08fc365a6eb3a4479ec69b573a6c7ad, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2183,7 +2223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 145389231}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2613,6 +2653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 821697842945867528, guid: ad723011623795149ab723c33c434c37, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2697,7 +2741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 182572901}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Conner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2775,6 +2819,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2935,7 +2983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 208760717}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Conner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3061,7 +3109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 219678744}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3160,6 +3208,10 @@ PrefabInstance:
     - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
@@ -3324,7 +3376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 230162601}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3357,6 +3409,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3420,6 +3476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 106.49
@@ -3481,6 +3541,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bfcfcf03589499346b24e110b74a3822, type: 3}
       propertyPath: m_Name
       value: Stairs_High (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bfcfcf03589499346b24e110b74a3822, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bfcfcf03589499346b24e110b74a3822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3896,6 +3960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_High (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404306957148776316, guid: 1e5e6584f4b365c49a0edc23ccafc87b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6404306957149010780, guid: 1e5e6584f4b365c49a0edc23ccafc87b, type: 3}
       propertyPath: m_RootOrder
       value: 462
@@ -3977,6 +4045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.47
@@ -4042,6 +4114,10 @@ PrefabInstance:
     - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
@@ -4387,6 +4463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 402
@@ -4479,6 +4559,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4602,6 +4686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4688,6 +4776,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4782,6 +4874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 390
@@ -4844,6 +4940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.47
@@ -4905,6 +5005,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 49fcc1a1bf581d4489a835b31d909c9c, type: 3}
       propertyPath: m_Name
       value: Stairs_Low (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 49fcc1a1bf581d4489a835b31d909c9c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49fcc1a1bf581d4489a835b31d909c9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5081,7 +5185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 361961049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5471,6 +5575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 394
@@ -5618,6 +5726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony_Post (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 434.094
@@ -5668,37 +5780,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
   m_PrefabInstance: {fileID: 407112005}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &408145031
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 408145032}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &408145032
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408145031}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 477466436}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &409361208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5773,6 +5854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 402
@@ -5834,6 +5919,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
       propertyPath: m_Name
       value: Stairs_Platform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5977,6 +6066,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6278,6 +6371,10 @@ PrefabInstance:
     - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
@@ -6623,6 +6720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 432
@@ -6746,6 +6847,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Corner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7061,6 +7166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 398
@@ -7142,79 +7251,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1240415330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &477466435
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 575770955}
-    m_Modifications:
-    - target: {fileID: 9074594807980867114, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_RootOrder
-      value: 408
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.99641
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.52655905
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.85013855
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 116.453
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074594807983055082, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      propertyPath: m_Name
-      value: Door_Wooden_Round_Right
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 408145032}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
---- !u!4 &477466436 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9074594807982636234, guid: 15745f8b70e5d524183539fa272d90a3, type: 3}
-  m_PrefabInstance: {fileID: 477466435}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &479065729
 GameObject:
   m_ObjectHideFlags: 0
@@ -7427,6 +7463,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7736,6 +7776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony (07)
       objectReference: {fileID: 0}
+    - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7916,6 +7960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony_Post (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 434.094
@@ -7977,7 +8025,7 @@ GameObject:
   - component: {fileID: 524665730}
   - component: {fileID: 524665729}
   - component: {fileID: 524665728}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8201,6 +8249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7586093321967142111, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.49999988
@@ -8253,6 +8305,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9222988866110790705, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8274,6 +8330,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 49fcc1a1bf581d4489a835b31d909c9c, type: 3}
       propertyPath: m_Name
       value: Stairs_Low
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 49fcc1a1bf581d4489a835b31d909c9c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49fcc1a1bf581d4489a835b31d909c9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8419,7 +8479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 546544917}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8620,7 +8680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561136036}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9088,7 +9148,6 @@ Transform:
   - {fileID: 1771297076}
   - {fileID: 690033006}
   - {fileID: 794825789}
-  - {fileID: 477466436}
   - {fileID: 541853654}
   - {fileID: 1182271467}
   - {fileID: 1976117639}
@@ -9488,6 +9547,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 936655011711060175, guid: 5e10be2f5a748844dbd0b2b7e6fafd4a, type: 3}
   m_PrefabInstance: {fileID: 614071446}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &615801289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615801293}
+  - component: {fileID: 615801292}
+  - component: {fileID: 615801291}
+  - component: {fileID: 615801290}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &615801290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615801289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &615801291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615801289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &615801292
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615801289}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &615801293
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615801289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1565359495}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &621979928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9665,6 +9826,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9874,6 +10039,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10089,7 +10258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659596779}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 2ndFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10182,6 +10351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 821697842945867528, guid: ad723011623795149ab723c33c434c37, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -10206,6 +10379,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10297,7 +10474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 684252289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10361,6 +10538,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_Name
       value: Balcony (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10531,7 +10712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5641005753178651135, guid: 14c7ae449f5510545a6073c174fa2df2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 401.36487
+      value: 427.14
       objectReference: {fileID: 0}
     - target: {fileID: 5641005753178651135, guid: 14c7ae449f5510545a6073c174fa2df2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10568,6 +10749,18 @@ PrefabInstance:
     - target: {fileID: 5641005753178651135, guid: 14c7ae449f5510545a6073c174fa2df2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101576194602973773, guid: 14c7ae449f5510545a6073c174fa2df2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101576194602973773, guid: 14c7ae449f5510545a6073c174fa2df2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -451.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8991138555603623208, guid: 14c7ae449f5510545a6073c174fa2df2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 45.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10682,6 +10875,10 @@ PrefabInstance:
     - target: {fileID: 6404306957148776316, guid: 1e5e6584f4b365c49a0edc23ccafc87b, type: 3}
       propertyPath: m_Name
       value: Stairs_High (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404306957148776316, guid: 1e5e6584f4b365c49a0edc23ccafc87b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6404306957149010780, guid: 1e5e6584f4b365c49a0edc23ccafc87b, type: 3}
       propertyPath: m_RootOrder
@@ -11383,6 +11580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 510248444000662079, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 510248444000824863, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
       propertyPath: m_RootOrder
       value: 419
@@ -11584,6 +11785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7586093321967142111, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.49999988
@@ -11636,6 +11841,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9222988866110790705, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11655,9 +11864,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1870240620594930665, guid: 230dfc567c658054cb3a41c813944214, type: 3}
+      propertyPath: groundDistance
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870240620594930665, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 1001905635}
+    - target: {fileID: 1870240620594930665, guid: 230dfc567c658054cb3a41c813944214, type: 3}
+      propertyPath: gameOverCanvasPrefab
+      value: 
+      objectReference: {fileID: 3139341445809510303, guid: d2c3cdd4f1eae4fe89ab1e549aba243d, type: 3}
     - target: {fileID: 5410248398769768825, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_Name
       value: MainCharcter
@@ -11676,19 +11893,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 400
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 252
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalRotation.x
@@ -11696,7 +11913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalRotation.z
@@ -11708,7 +11925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7524049841085894461, guid: 230dfc567c658054cb3a41c813944214, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -11813,7 +12030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 780207239}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11846,6 +12063,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11906,7 +12127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 792981410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12121,6 +12342,10 @@ PrefabInstance:
     - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
@@ -12423,6 +12648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony_Post (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 104.563034
@@ -12515,6 +12744,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
       propertyPath: m_Name
       value: Stairs_Platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12747,6 +12980,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13007,68 +13244,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5675712537768515036, guid: 8cda7687928e5174ea2627e48a3c6d69, type: 3}
   m_PrefabInstance: {fileID: 871274503}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &872850905
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1373278578}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_Name
-      value: Pillar (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 43.207703
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.3699951
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
---- !u!4 &872850906 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 7eb3c1e408f48cd4597148e13d3f14c8, type: 3}
-  m_PrefabInstance: {fileID: 872850905}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &872977529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13140,7 +13315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 875235511}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13296,6 +13471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Corner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1907596199301443059, guid: d468aca3a4ae71b46a917597c89e70ac, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -13444,6 +13623,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_Name
       value: Balcony (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13690,7 +13873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 931116712}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13721,7 +13904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 934015683}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14048,6 +14231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 402
@@ -14232,6 +14419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Corner 1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1907596199301443059, guid: d468aca3a4ae71b46a917597c89e70ac, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -14287,6 +14478,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_Name
       value: Balcony
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14411,6 +14606,10 @@ PrefabInstance:
     - target: {fileID: 510248444000662079, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
       propertyPath: m_Name
       value: Stairs_Platform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 510248444000662079, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 510248444000824863, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
       propertyPath: m_RootOrder
@@ -14557,6 +14756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Corner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1907596199301443059, guid: d468aca3a4ae71b46a917597c89e70ac, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -14579,7 +14782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 983449497}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14672,6 +14875,10 @@ PrefabInstance:
     - target: {fileID: 6880993203750005610, guid: a08fc365a6eb3a4479ec69b573a6c7ad, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Corner_ Inverted (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880993203750005610, guid: a08fc365a6eb3a4479ec69b573a6c7ad, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14879,114 +15086,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7969972704443486089, guid: 3ef94e73d5607784fbcbba8de4155b1e, type: 3}
   m_PrefabInstance: {fileID: 999429322}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1001905632
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1001905635}
-  - component: {fileID: 1001905634}
-  - component: {fileID: 1001905633}
-  - component: {fileID: 1001905636}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1001905633
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001905632}
-  m_Enabled: 1
---- !u!20 &1001905634
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001905632}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1001905635
+--- !u!4 &1001905635 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+  m_PrefabInstance: {fileID: 7638968212749321611}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001905632}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.81478953, z: -0, w: 0.5797568}
-  m_LocalPosition: {x: 401, y: 3.81, z: 249.13}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -109.133, z: 0}
---- !u!114 &1001905636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001905632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efb6f2bcf7ed81b4684deb8c1a464538, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookAt: {fileID: 1044598142}
-  camTransform: {fileID: 1001905635}
-  distance: 10
 --- !u!1 &1002245390
 GameObject:
   m_ObjectHideFlags: 0
@@ -15029,6 +15133,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15254,6 +15362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 402
@@ -15462,6 +15574,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15689,7 +15805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1053016034}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15870,6 +15986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 394
@@ -15931,6 +16051,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15994,6 +16118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5bc1dd11c6f2254390d709ebc8d40b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 432
@@ -16055,6 +16183,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16382,7 +16514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1090067284}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16888,7 +17020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1139093872}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17045,6 +17177,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17270,6 +17406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_High
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bfcfcf03589499346b24e110b74a3822, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bfcfcf03589499346b24e110b74a3822, type: 3}
       propertyPath: m_LocalPosition.x
       value: 106.47
@@ -17465,6 +17605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 821697842945867528, guid: ad723011623795149ab723c33c434c37, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -17489,6 +17633,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17820,7 +17968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1204004080}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17915,6 +18063,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18034,6 +18186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center_Stairs (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6749352559180136923, guid: f4372e02dd0e54440977f29b6a4c317b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6749352559182143259, guid: f4372e02dd0e54440977f29b6a4c317b, type: 3}
       propertyPath: m_LightProbeUsage
       value: 0
@@ -18060,7 +18216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1231872081}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rightstair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18183,7 +18339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1249780075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18301,6 +18457,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18709,6 +18869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Platform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 510248444000662079, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 510248444000824863, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
       propertyPath: m_RootOrder
       value: 464
@@ -18794,6 +18958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 394
@@ -18855,6 +19023,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_Name
       value: Balcony_Post (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19051,6 +19223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTIle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 20f2ea214cfe0d748b1b4b8ad965af69, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19072,6 +19248,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_Name
       value: Balcony_Post (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19623,6 +19803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.19
@@ -19747,6 +19931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.19
@@ -19870,6 +20058,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20069,7 +20261,6 @@ Transform:
   - {fileID: 325577614}
   - {fileID: 307145841}
   - {fileID: 467955934}
-  - {fileID: 872850906}
   m_Father: {fileID: 1736903963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1378700272
@@ -20316,6 +20507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.47
@@ -20378,6 +20573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 406
@@ -20428,6 +20627,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
   m_PrefabInstance: {fileID: 1390342384}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1393489637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6723646178078775804, guid: 230dfc567c658054cb3a41c813944214, type: 3}
+  m_PrefabInstance: {fileID: 768578480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d807588989a3a4350908518fa8678e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1394311426
 GameObject:
   m_ObjectHideFlags: 0
@@ -20437,7 +20647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1394311427}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20469,7 +20679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1399523667}
   - component: {fileID: 1399523668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20685,6 +20895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.24115
@@ -20863,6 +21077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 398
@@ -20925,6 +21143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7586093321967142111, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.49999988
@@ -20977,6 +21199,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9222988866110790705, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20998,6 +21224,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 17a224d1aeb5e59439a4ddda2f1ef3a6, type: 3}
       propertyPath: m_Name
       value: Hallway_Double
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 17a224d1aeb5e59439a4ddda2f1ef3a6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 17a224d1aeb5e59439a4ddda2f1ef3a6, type: 3}
       propertyPath: m_LocalScale.x
@@ -21091,6 +21321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony_Post
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 434.094
@@ -21150,7 +21384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1445773043}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21214,6 +21448,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21398,6 +21636,10 @@ PrefabInstance:
     - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
       propertyPath: m_Name
       value: Balcony (09)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21655,6 +21897,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_Name
       value: Balcony_Post
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22113,6 +22359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 406
@@ -22178,6 +22428,10 @@ PrefabInstance:
     - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
@@ -22259,6 +22513,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22984,7 +23242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1538575873}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Leftstair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23056,6 +23314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 406
@@ -23117,6 +23379,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23228,6 +23494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 821697842945867528, guid: ad723011623795149ab723c33c434c37, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -23313,6 +23583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Low (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8702035252243360985, guid: 01758e662295c9347b35b7bdee71f5b4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -23337,6 +23611,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23428,7 +23706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1560881027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23547,6 +23825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.19
@@ -23597,6 +23879,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
   m_PrefabInstance: {fileID: 1563772600}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1565359495 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+  m_PrefabInstance: {fileID: 1567415774396572025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1569233301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23608,6 +23895,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
       propertyPath: m_Name
       value: Stairs_Platform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 99e55592c6d88984cb6b00f2455032dc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24291,7 +24582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1617600304}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24749,6 +25040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Corner 1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1907596199301443059, guid: d468aca3a4ae71b46a917597c89e70ac, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -24771,7 +25066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1637007123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25022,6 +25317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 406
@@ -25083,6 +25382,10 @@ PrefabInstance:
     - target: {fileID: 510248444000662079, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
       propertyPath: m_Name
       value: Stairs_Platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 510248444000662079, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 510248444000824863, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
       propertyPath: m_RootOrder
@@ -25278,7 +25581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689258002}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25340,7 +25643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696414361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25793,6 +26096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 821697842945867528, guid: ad723011623795149ab723c33c434c37, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -25856,6 +26163,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_Name
       value: Balcony_Post (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25953,6 +26264,10 @@ PrefabInstance:
     - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
@@ -26366,6 +26681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Low
       objectReference: {fileID: 0}
+    - target: {fileID: 8702035252243360985, guid: 01758e662295c9347b35b7bdee71f5b4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -26542,6 +26861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
       value: 392
@@ -26684,6 +27007,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26913,6 +27240,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27151,7 +27482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1829566667}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27347,6 +27678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 390
@@ -27470,6 +27805,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27765,6 +28104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.75
@@ -27909,7 +28252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1856235627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27942,6 +28285,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28071,7 +28418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1863391149}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28196,6 +28543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Corner
       objectReference: {fileID: 0}
+    - target: {fileID: 1907596199301443059, guid: d468aca3a4ae71b46a917597c89e70ac, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -28280,7 +28631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1879603144}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28344,6 +28695,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28469,6 +28824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony_Railing
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b1cfd52e76785524c8551b29a7d4fd9b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b1cfd52e76785524c8551b29a7d4fd9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 112.33
@@ -28528,7 +28887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1893048524}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28695,6 +29054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 821697842945867528, guid: ad723011623795149ab723c33c434c37, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -28750,6 +29113,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29051,6 +29418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -29116,6 +29487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorTIle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 20f2ea214cfe0d748b1b4b8ad965af69, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29168,6 +29543,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29383,7 +29762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946854319}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29416,6 +29795,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29539,6 +29922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2470529085382041525, guid: a9c55b2fac05ba248a24bd117da7b964, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -29594,6 +29981,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c139cd5cbc01af1429c798486a2d470b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29687,6 +30078,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29824,6 +30219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balcony_Post (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5112dfda82958c409df9989d8ea074c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 434.094
@@ -29948,6 +30347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a39725da2f6e50a4d888e2e3bdbb0cc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.19
@@ -30013,6 +30416,10 @@ PrefabInstance:
     - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161654591381885820, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4161654591382310748, guid: c7af5921109b94141afd37e9fdd75443, type: 3}
       propertyPath: m_RootOrder
@@ -30239,7 +30646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1993926811}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30303,6 +30710,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b1cfd52e76785524c8551b29a7d4fd9b, type: 3}
       propertyPath: m_Name
       value: Balcony_Railing (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b1cfd52e76785524c8551b29a7d4fd9b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b1cfd52e76785524c8551b29a7d4fd9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30510,7 +30921,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011441120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30572,7 +30983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034663945}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30603,7 +31014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2035734085}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30692,6 +31103,10 @@ PrefabInstance:
     - target: {fileID: 6749352559180136923, guid: f4372e02dd0e54440977f29b6a4c317b, type: 3}
       propertyPath: m_Name
       value: Dungeon_Hall_Center_Stairs (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749352559180136923, guid: f4372e02dd0e54440977f29b6a4c317b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6749352559182143259, guid: f4372e02dd0e54440977f29b6a4c317b, type: 3}
       propertyPath: m_LightProbeUsage
@@ -31047,6 +31462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Center (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e50ad9eaa8639841a02be301a11ccab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 406
@@ -31346,6 +31765,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1821300323073961416, guid: 2b5f6b76f1ed47f4f8bc90c9aff3184b, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31513,6 +31936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon_Hall_Corner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1907596199301443059, guid: d468aca3a4ae71b46a917597c89e70ac, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -31537,6 +31964,10 @@ PrefabInstance:
     - target: {fileID: 7586093321967142111, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_Name
       value: Torch_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586093321967142111, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7586093321967573247, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
       propertyPath: m_LocalScale.x
@@ -31590,6 +32021,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9222988866110790705, guid: 4b437f1c2454a2c409b1b7f35e69d661, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31609,7 +32044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125512370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31755,11 +32190,181 @@ Transform:
   m_Children: []
   m_Father: {fileID: 871274504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1567415774396572025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 615801293}
+    m_Modifications:
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 170.6706
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 27.9279
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 61.20749
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.956177
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231504209237495423, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415647091957420175, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415647091957420175, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393274539886535052, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1393489637}
+    - target: {fileID: 8566048663965819130, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+      propertyPath: m_Name
+      value: Health bar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ac373f8d73f0421796b90f7c1a2cd3b, type: 3}
+--- !u!1001 &7638968212749321611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5310669922283716066, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5625871857680470909, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: lookAt
+      value: 
+      objectReference: {fileID: 1044598142}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 401
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 249.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5797568
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.81478953
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -109.133
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758706053153594383, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd321708fdc684f24aac5ce9109bf5e3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1001905635}
+  - {fileID: 7638968212749321611}
   - {fileID: 524665730}
   - {fileID: 575770955}
   - {fileID: 1736903963}
@@ -31767,3 +32372,4 @@ SceneRoots:
   - {fileID: 532337172}
   - {fileID: 768578480}
   - {fileID: 693507976}
+  - {fileID: 615801293}

@@ -42,6 +42,13 @@ public class SlimeAi : MonoBehaviour
     [HideInInspector]
     public bool playerDetected;
 
+    // Existing variables
+    private bool canAttack = true;  // Control attack cooldown
+    public float attackCooldown = 1.0f;  // Cooldown duration in seconds
+    
+    // Track previous behavior
+    private WalkType previousWalkType;
+
     void Start()
     {
         originPos = transform.position;
@@ -165,12 +172,11 @@ public class SlimeAi : MonoBehaviour
                 }
                 StopAgent();
                 SetFace(faces.attackFace);
+                previousWalkType = walkType; // Save the previous walk type
                 DealDamageToPlayer();
                 animator.SetTrigger("Attack");
-
-                // Debug.Log("Attacking");
-
                 break;
+
             case SlimeAnimationState.Damage:
 
                 // Do nothing when animtion is playing
@@ -221,7 +227,7 @@ public class SlimeAi : MonoBehaviour
         {
             if (!playerDetected)
             {
-                walkType = WalkType.ExploreRandom;
+                walkType = previousWalkType;  // Restore the previous behavior
             }
             currentState = SlimeAnimationState.Walk;
         }
@@ -345,48 +351,31 @@ public class SlimeAi : MonoBehaviour
     }
     public void DealDamageToPlayer()
     {
-        // RaycastHit hit;
-
-        // if (Physics.Raycast(transform.position, transform.forward, out hit, 70.0f))
-        // {
-        //     Debug.Log("check");
-        //     if (hit.collider.CompareTag("Player"))
-        //     {
-        //         Debug.Log("check2");
-        //         PlayerControl player = hit.collider.GetComponent<PlayerControl>();
-        //         if (player != null)
-        //         {
-        //             Debug.Log("check3");
-        //             player.PlayerTakeDamage(AttackDamage);
-        //         }
-        //     }
-        // }
-
-        Vector3 boxHalfExtents = new Vector3(3.0f, 3.0f, 3.0f);  // ขนาดของกล่อง (ครึ่งหนึ่งของขนาดจริง)
-        RaycastHit[] hits = Physics.BoxCastAll(transform.position, boxHalfExtents, transform.forward, Quaternion.identity, 5.0f);
-
-        if (hits.Length > 0)  // ตรวจสอบว่ามีการชนกับวัตถุใดๆ หรือไม่
+        if (!canAttack) return; // Skip if attack is in cooldown
+        
+        canAttack = false; // Prevent consecutive attacks
+        Vector3 boxHalfExtents = new Vector3(0.5f, 0.5f, 0.5f);
+        RaycastHit[] hits = Physics.BoxCastAll(transform.position, boxHalfExtents, transform.forward, Quaternion.identity, 1.0f);
+        if (hits.Length > 0)
         {
-            foreach (RaycastHit hit in hits)  // ลูปผ่านวัตถุที่ชนทั้งหมด
+            foreach (RaycastHit hit in hits)
             {
-                Debug.Log("Hit object: " + hit.collider.name);
-
-                // ตรวจสอบว่ามี Tag เป็น "Player"
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Hit player object: " + hit.collider.name);
                     PlayerControl player = hit.collider.GetComponent<PlayerControl>();
                     if (player != null)
                     {
-                        Debug.Log("Dealing damage to player");
-                        player.PlayerTakeDamage(AttackDamage);  // ทำดาเมจ
+                        player.PlayerTakeDamage(AttackDamage);
                     }
                 }
             }
         }
-
-
+        StartCoroutine(AttackCooldownCoroutine());  // Start cooldown coroutine
     }
 
-
+    private IEnumerator AttackCooldownCoroutine()
+    {
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
 }
