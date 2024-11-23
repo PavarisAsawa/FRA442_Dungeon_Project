@@ -24,7 +24,9 @@ public class PlayerControl : MonoBehaviour
     public float hitCooldown = 1.5f; // Duration of the cooldown period
     private bool isHit = false; // Flag to track if hit animation is playing
     public GameObject gameOverCanvasPrefab; // Assign this in the Inspector
-    void Start()
+    private  AudioSource hitSound;
+    
+        void Start()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
@@ -35,6 +37,7 @@ public class PlayerControl : MonoBehaviour
             Debug.LogError("Player component not found!");
         }
         currentSpeed = player.runSpeed;
+        hitSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -97,6 +100,7 @@ public class PlayerControl : MonoBehaviour
         {
             animator.SetTrigger("Attack");
             isAttacking = true;  // เริ่มโจมตี
+            hitSound.Play();
             StartCoroutine(AttackRoutine());
         }
     }
