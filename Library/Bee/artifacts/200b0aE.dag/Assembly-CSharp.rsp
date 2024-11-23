@@ -386,6 +386,8 @@
 "Assets/Script/StartGame.cs"
 "Assets/Script/Sword.cs"
 "Assets/Script/ThirdPersonCamera.cs"
+"Assets/Script/WaveLevelUIManager.cs"
+"Assets/Script/WaveManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+
