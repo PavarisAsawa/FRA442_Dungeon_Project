@@ -154,6 +154,9 @@ public class PlayerControl : MonoBehaviour
     void Die()
     {
         isDead = true;
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isSprint", false);
+        animator.SetBool("isHit", false);
         animator.SetBool("isDead", true);
 
         // หยุดการอัปเดตความเร็วเพื่อไม่ให้แรงโน้มถ่วงมีผล
