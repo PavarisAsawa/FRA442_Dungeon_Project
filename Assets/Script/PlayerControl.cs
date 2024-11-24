@@ -22,6 +22,8 @@ public class PlayerControl : MonoBehaviour
     public LayerMask groundMask;
     public float hitCooldown = 1.5f; // Duration of the cooldown period
     private bool isHit = false; // Flag to track if hit animation is playing
+    private AudioSource hitSound;
+    
 
     void Start()
     {

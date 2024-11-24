@@ -33,12 +33,7 @@ public class DragonAi : MonoBehaviour
     void Update()
     {
         CheckPlayer();
-        // Debug.Log(playerNear);
-        // if (dragonHealth >= 400 && playerNear)
-        // {
-        //     animator.SetInteger("animation",4);
-        // }
-        // else if (state == DragonState.Idle) animator.SetInteger("animation",1);
+
     }
 
     void Face2Player()
@@ -74,8 +69,8 @@ public class DragonAi : MonoBehaviour
 
     public void DragonEat()
     {
-        Vector3 box = new Vector3(2f, 2f, 2f);
-        RaycastHit[] hits = Physics.BoxCastAll(transform.position, box, transform.forward, Quaternion.identity, 1.25f);
+        Vector3 box = new Vector3(2f, 2f, 3f);
+        RaycastHit[] hits = Physics.BoxCastAll(transform.position, box, transform.forward, Quaternion.identity, 3f);
         if (hits.Length > 0)
         {
             foreach (RaycastHit hit in hits)
@@ -97,7 +92,7 @@ public class DragonAi : MonoBehaviour
         if (state != DragonState.Init || state != DragonState.Sick || state != DragonState.Dead) Face2Player();
 
         playerNear = false; // ตั้งค่าเริ่มต้นเป็น false
-        float detectionRadius = 3.5f; // ระยะที่ต้องการตรวจจับ
+        float detectionRadius = 6f; // ระยะที่ต้องการตรวจจับ
         Collider[] nearbyObjects = Physics.OverlapSphere(transform.position, detectionRadius); // ตรวจจับวัตถุในระยะ
         foreach (Collider collider in nearbyObjects)
         {

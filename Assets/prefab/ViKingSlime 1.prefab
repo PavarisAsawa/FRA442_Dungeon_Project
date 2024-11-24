@@ -374,9 +374,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   visibleTargets: []
+  scoreValue: 10
   targetTransform: {fileID: 0}
   playerDetected: 0
   attackCooldown: 1
+  BloodEffect: {fileID: 4840070116914301980, guid: f54f68d5fea7ede43b0765713eef6812, type: 3}
 --- !u!54 &2128473952691887219
 Rigidbody:
   m_ObjectHideFlags: 0

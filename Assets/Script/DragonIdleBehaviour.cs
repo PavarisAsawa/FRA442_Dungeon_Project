@@ -16,7 +16,7 @@ public class DragonIdleBehaviour : StateMachineBehaviour
     {
             // Debug.Log("asdsadsadsad");
 
-            if (dragon.dragonHealth >= 400 && dragon.playerNear)
+            if (dragon.dragonHealth >= 300 && dragon.playerNear)
             {
                 dragon.setState(DragonAi.DragonState.Eat);
                 animator.SetInteger("animation", 100);
