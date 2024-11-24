@@ -16,10 +16,14 @@ public class DragonIdleBehaviour : StateMachineBehaviour
     {
             // Debug.Log("asdsadsadsad");
 
-            if (dragon.dragonHealth >= 300 && dragon.playerNear)
+            if (dragon.playerNear)
             {
                 dragon.setState(DragonAi.DragonState.Eat);
                 animator.SetInteger("animation", 100);
+            }
+            else if(dragon.dragonHealth <= 300)
+            {
+                animator.SetInteger("animation", 101);
             }
     }
 
@@ -28,13 +32,6 @@ public class DragonIdleBehaviour : StateMachineBehaviour
     {
         if (dragon != null)
         {
-            // Debug.Log("asdsadsadsad");
-
-            // if (dragon.dragonHealth >= 400 && dragon.playerNear)
-            // {
-            //     dragon.setState(DragonAi.DragonState.Eat);
-            //     animator.SetInteger("animation", 100);
-            // }
         }
     }
 

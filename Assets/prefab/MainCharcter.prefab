@@ -2382,7 +2382,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   hitCooldown: 1.5
-  gameOverCanvasPrefab: {fileID: 4840070116914301980, guid: f54f68d5fea7ede43b0765713eef6812, type: 3}
+  gotDamageSound: {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
 --- !u!114 &6723646178078775804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2395,8 +2395,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d807588989a3a4350908518fa8678e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMaxHealth: 100
   playerHealth: 100
-  AttactDamage: 20
+  AttackDamage: 20
   runSpeed: 12
   sprintSpeed: 18
 --- !u!54 &7921231407422219712

@@ -1083,7 +1083,7 @@ GameObject:
   - component: {fileID: 9153121631699925442}
   m_Layer: 0
   m_Name: Drago_Boss
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1146,7 +1146,10 @@ MonoBehaviour:
   maxHealth: 500
   dragonHealth: 500
   DragonRoarEffect: {fileID: 4146478982254715901, guid: 27507bb15ea66cf4fb1d498d637c233a, type: 3}
+  DragonRoarSound: {fileID: 8300000, guid: c729f12f762b10945adeb57029433a53, type: 3}
+  DragonFireBall: {fileID: 5248670852031759288, guid: a5dec8e0979ce954ea357d54c3aab3a8, type: 3}
   playerNear: 0
+  DragonDeadSound: {fileID: 8300000, guid: d4b8c73cf10bccd408d0e01d1a0bab7b, type: 3}
 --- !u!65 &6018208800525062854
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1166,8 +1169,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 1.5, z: 1.5}
-  m_Center: {x: 0, y: 0.6, z: 0}
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!54 &9153121631699925442
 Rigidbody:
   m_ObjectHideFlags: 0

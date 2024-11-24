@@ -52,5 +52,24 @@ public class Sword : MonoBehaviour
                 }
             }
         }
+
+        if (other.gameObject.CompareTag("Dragon") && playerControl != null && playerControl.isAttacking)
+        {
+            DragonAi dragon = other.gameObject.GetComponent<DragonAi>();
+            if (dragon != null)
+            {
+                // ตรวจสอบว่าค่า player ไม่เป็น null ก่อนที่จะเข้าถึงค่าความเสียหาย
+                if (dragon != null)
+                {
+                    // ส่งค่าความเสียหายจากผู้เล่นไปให้ Slime
+                    dragon.DragonTakeDamage(player.AttackDamage);
+                }
+                else
+                {
+                    Debug.LogError("Player component is not assigned.");
+                }
+            }
+        }
+
     }
 }

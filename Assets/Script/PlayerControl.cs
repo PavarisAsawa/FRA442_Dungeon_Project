@@ -23,6 +23,7 @@ public class PlayerControl : MonoBehaviour
     public float hitCooldown = 1.5f; // Duration of the cooldown period
     private bool isHit = false; // Flag to track if hit animation is playing
     private AudioSource hitSound;
+    [SerializeField]private AudioClip gotDamageSound;
     
 
     void Start()
@@ -118,6 +119,16 @@ public class PlayerControl : MonoBehaviour
         player.playerHealth -= damage;
         isHit = true;
         animator.SetTrigger("isHit");
+        if (gotDamageSound != null)
+        {
+            GameObject tempAudioSource = new GameObject("TempAudioSource"); // สร้าง GameObject ชั่วคราว
+            tempAudioSource.transform.position = transform.position; // กำหนดตำแหน่ง
+            AudioSource audioSource = tempAudioSource.AddComponent<AudioSource>(); // เพิ่ม AudioSource
+            audioSource.clip = gotDamageSound;
+            audioSource.volume = 0.2f; // ระดับเสียง
+            audioSource.Play();
+            Destroy(tempAudioSource, gotDamageSound.length); // ลบ GameObject หลังเสียงเล่นจบ
+        }
 
         if (player.playerHealth <= 0)
         {

@@ -311,11 +311,10 @@ public class SlimeAi : MonoBehaviour
 
     void Die()
     {
-        // Notify the ScoreManager to add score
-        ScoreManager.Instance.AddScore(scoreValue);
-        
         // กำหนดให้ Slime ตาย
         Destroy(gameObject);  // ทำลาย GameObject เมื่อ Slime ตาย
+        // Notify the ScoreManager to add score
+        ScoreManager.Instance.AddScore(scoreValue);
     }
     IEnumerator FindTargetsWithDelay(float delay)
     {

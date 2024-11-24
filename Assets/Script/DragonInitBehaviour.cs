@@ -9,8 +9,6 @@ public class DragonInitBehaviour : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         dragon = animator.GetComponent<DragonAi>();
-        // if (dragon != null) Debug.Log("DragonAi found: " + dragon.name);
-        // else Debug.LogWarning("DragonAi component not found on the GameObject.");
         dragon.DragonRoar();
     }
 

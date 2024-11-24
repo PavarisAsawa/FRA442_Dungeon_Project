@@ -19,7 +19,11 @@ public class DragonAi : MonoBehaviour
     // [SerializeField] private int AnimationInput = 0; 
     private DragonState state = DragonState.Init;
     public GameObject DragonRoarEffect;
+    public AudioClip DragonRoarSound;
+    public GameObject DragonFireBall;
     [HideInInspector] public Boolean playerNear = false;
+    private Boolean isDead = false;
+    public AudioClip DragonDeadSound;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -33,7 +37,7 @@ public class DragonAi : MonoBehaviour
     void Update()
     {
         CheckPlayer();
-
+        Debug.Log(state);
     }
 
     void Face2Player()
@@ -65,11 +69,22 @@ public class DragonAi : MonoBehaviour
             GameObject roar = Instantiate(DragonRoarEffect, transform.position, Quaternion.identity);
             Destroy(roar, 1.5f);
         }
+        // เล่นเสียง Dragon Roar
+        if (DragonRoarSound != null)
+        {
+            GameObject tempAudioSource = new GameObject("TempAudioSource"); // สร้าง GameObject ชั่วคราว
+            tempAudioSource.transform.position = transform.position; // กำหนดตำแหน่ง
+            AudioSource audioSource = tempAudioSource.AddComponent<AudioSource>(); // เพิ่ม AudioSource
+            audioSource.clip = DragonRoarSound;
+            audioSource.volume = 0.5f; // ระดับเสียง
+            audioSource.Play();
+            Destroy(tempAudioSource, DragonRoarSound.length); // ลบ GameObject หลังเสียงเล่นจบ
+        }
     }
 
     public void DragonEat()
     {
-        Vector3 box = new Vector3(2f, 2f, 3f);
+        Vector3 box = new Vector3(4f, 4f, 4f);
         RaycastHit[] hits = Physics.BoxCastAll(transform.position, box, transform.forward, Quaternion.identity, 3f);
         if (hits.Length > 0)
         {
@@ -89,7 +104,8 @@ public class DragonAi : MonoBehaviour
 
     void CheckPlayer()
     {
-        if (state != DragonState.Init || state != DragonState.Sick || state != DragonState.Dead) Face2Player();
+        // if (state != DragonState.Init || state != DragonState.Sick || state != DragonState.Dead) Face2Player();
+        if (!isDead) Face2Player();
 
         playerNear = false; // ตั้งค่าเริ่มต้นเป็น false
         float detectionRadius = 6f; // ระยะที่ต้องการตรวจจับ
@@ -101,6 +117,58 @@ public class DragonAi : MonoBehaviour
                 playerNear = true;
                 break; // ออกจากลูปเมื่อเจอ Player
             }
+        }
+    }
+
+    public void DragonTakeDamage(float damamge)
+    {
+        dragonHealth -= damamge;
+        if (dragonHealth <= 0)
+        {
+            DragonDie();
+        }
+    }
+    void DragonDie()
+    {
+        isDead = true;
+        state = DragonState.Dead;
+        animator.SetBool("Die", true);
+        if (DragonDeadSound != null)
+        {
+            GameObject tempAudioSource = new GameObject("TempAudioSource2"); // สร้าง GameObject ชั่วคราว
+            tempAudioSource.transform.position = transform.position; // กำหนดตำแหน่ง
+            AudioSource audioSource = tempAudioSource.AddComponent<AudioSource>(); // เพิ่ม AudioSource
+            audioSource.clip = DragonDeadSound;
+            audioSource.volume = 0.5f; // ระดับเสียง
+            audioSource.Play();
+            Destroy(tempAudioSource, DragonDeadSound.length); // ลบ GameObject หลังเสียงเล่นจบ
+        }
+    }
+
+    public void DragonFire()
+    {
+        if (DragonRoarEffect != null)
+        {
+            Vector3 spawnPosition = transform.position + transform.forward * 2f; // ด้านหน้ามังกร
+            spawnPosition.y = 2f; // เพิ่มความสูงในแกน Y
+
+            // สร้าง fireball ที่ตำแหน่งที่ปรับแล้ว
+            GameObject fireball = Instantiate(DragonFireBall, spawnPosition, Quaternion.identity);
+            fireball.transform.localScale = new Vector3(2f, 2f, 2f);
+            // กำหนดให้ fireball มีความเร็ว
+            Rigidbody rb = fireball.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                Vector3 fireDirection = transform.forward; // ทิศทางการยิง (ไปข้างหน้า)
+                float fireSpeed = 80f; // ความเร็ว
+                rb.velocity = fireDirection * fireSpeed;
+            }
+            else
+            {
+                Debug.LogWarning("DragonFireBall is missing Rigidbody!");
+            }
+            // ทำลาย fireball หลังจาก 1 วินาที
+            Destroy(fireball, 5f);
         }
     }
 
