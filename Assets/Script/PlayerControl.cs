@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController), typeof(Animator))]
@@ -10,7 +9,7 @@ public class PlayerControl : MonoBehaviour
     private Animator animator;
 
     private float currentSpeed;
-    public Transform cameraTransform; // กล้องที่จะใช้ในการคำนวณทิศทาง
+    public Transform cameraTransform; // Camera used for direction calculation
 
     private Vector3 velocity = Vector3.zero;
     private float gravity = -9.81f;
@@ -23,14 +22,12 @@ public class PlayerControl : MonoBehaviour
     public LayerMask groundMask;
     public float hitCooldown = 1.5f; // Duration of the cooldown period
     private bool isHit = false; // Flag to track if hit animation is playing
-    public GameObject gameOverCanvasPrefab; // Assign this in the Inspector
-    private  AudioSource hitSound;
-    
-        void Start()
+
+    void Start()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        player = GetComponent<Player>();  // เพิ่มการกำหนดค่า player
+        player = GetComponent<Player>();
 
         if (player == null)
         {
@@ -42,9 +39,8 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return;  // หยุดการทำงานหากตัวละครตายแล้ว
+        if (isDead) return;
 
-        // Check if the player is grounded
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
@@ -52,45 +48,9 @@ public class PlayerControl : MonoBehaviour
             velocity.y = 0.0f;
         }
 
-        // Handle movement and attack
         if (!isAttacking)
         {
-            float horizontalMovement = Input.GetAxisRaw("Horizontal");
-            float verticalMovement = Input.GetAxisRaw("Vertical");
-
-            Vector3 moveDirection = new Vector3(horizontalMovement, 0, verticalMovement).normalized;
-
-            if (moveDirection.magnitude >= 0.1f)
-            {
-                if (Input.GetKey(KeyCode.LeftShift))
-                {
-                    currentSpeed = player.sprintSpeed;
-                    animator.SetBool("isSprint", true);
-                    animator.SetBool("isRunning", false);
-                }
-                else
-                {
-                    currentSpeed = player.runSpeed;
-                    animator.SetBool("isSprint", false);
-                    animator.SetBool("isRunning", true);
-                }
-
-                // คำนวณมุมทิศทางจากกล้อง
-                float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
-                Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
-
-                // หมุนตัวละครไปตามทิศทางเป้าหมายทันที
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
-
-                // คำนวณทิศทางการเคลื่อนที่ใหม่จากการหมุน
-                Vector3 move = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
-                characterController.Move(move * currentSpeed * Time.deltaTime);
-            }
-            else
-            {
-                animator.SetBool("isRunning", false);
-                animator.SetBool("isSprint", false);
-            }
+            HandleMovement();
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -101,7 +61,45 @@ public class PlayerControl : MonoBehaviour
             animator.SetTrigger("Attack");
             isAttacking = true;  // เริ่มโจมตี
             hitSound.Play();
+            isAttacking = true;
             StartCoroutine(AttackRoutine());
+        }
+    }
+
+    private void HandleMovement()
+    {
+        float horizontalMovement = Input.GetAxisRaw("Horizontal");
+        float verticalMovement = Input.GetAxisRaw("Vertical");
+
+        Vector3 moveDirection = new Vector3(horizontalMovement, 0, verticalMovement).normalized;
+
+        if (moveDirection.magnitude >= 0.1f)
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                currentSpeed = player.sprintSpeed;
+                animator.SetBool("isSprint", true);
+                animator.SetBool("isRunning", false);
+            }
+            else
+            {
+                currentSpeed = player.runSpeed;
+                animator.SetBool("isSprint", false);
+                animator.SetBool("isRunning", true);
+            }
+
+            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
+            Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
+
+            Vector3 move = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
+            characterController.Move(move * currentSpeed * Time.deltaTime);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isSprint", false);
         }
     }
 
@@ -111,15 +109,13 @@ public class PlayerControl : MonoBehaviour
         isAttacking = false;
     }
 
-    // ฟังก์ชันสำหรับการรับความเสียหายและเรียกใช้อนิเมชันโดนตี
     public void PlayerTakeDamage(float damage)
     {
-        if (isDead || isHit) return;  // Skip if dead or already in hit animation or invincible
+        if (isDead || isHit) return;
 
         player.playerHealth -= damage;
-        isHit = true;  // Set the hit flag to prevent multiple triggers
-        animator.SetTrigger("isHit");  // Trigger the hit animation
-        Debug.Log("Player takes damage, playing hit animation.");
+        isHit = true;
+        animator.SetTrigger("isHit");
 
         if (player.playerHealth <= 0)
         {
@@ -131,26 +127,21 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    // Cooldown coroutine to reset the isHit flag after a short period and apply invincibility
     IEnumerator HitCooldownRoutine()
     {
-        yield return new WaitForSeconds(hitCooldown); // รอให้อนิเมชันการโดนตีเล่นจนจบ
+        yield return new WaitForSeconds(hitCooldown);
 
-        // ตรวจสอบว่าอนิเมชัน "isHit" เล่นเสร็จสมบูรณ์ก่อนรีเซ็ต
-        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Hit") && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Hit") &&
+               animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
-            yield return null; // รอจนกว่าอนิเมชันจะจบ
+            yield return null;
         }
 
-        animator.ResetTrigger("isHit"); // รีเซ็ตทริกเกอร์ isHit
-        Debug.Log("Hit animation completed.");
-
-        // ระยะเวลาปลอดภัยหลังจากโดนตี
-        yield return new WaitForSeconds(3.0f); // ปลอดภัยเป็นเวลา 3 วินาที
-        isHit = false;  // Reset the flag to allow a new hit animation
-        Debug.Log("Invincibility period ended, player can take damage again.");
+        animator.ResetTrigger("isHit");
+        yield return new WaitForSeconds(1.0f);
+        isHit = false;
     }
-    
+
     void Die()
     {
         isDead = true;
@@ -159,20 +150,13 @@ public class PlayerControl : MonoBehaviour
         animator.SetBool("isHit", false);
         animator.SetBool("isDead", true);
 
-        // หยุดการอัปเดตความเร็วเพื่อไม่ให้แรงโน้มถ่วงมีผล
         velocity = Vector3.zero;
-
-        // หยุดการเคลื่อนที่ของ CharacterController
         characterController.Move(Vector3.zero);
 
-        // แสดง Game Over Canvas
-        if (gameOverCanvasPrefab != null)
-        {
-            Instantiate(gameOverCanvasPrefab); // สร้าง Game Over Canvas ขึ้นมา
-        }
-        else
-        {
-            Debug.LogWarning("Game Over Canvas Prefab is not assigned in the Inspector!");
-        }
+        GameManagerScript.Instance.ShowGameOver(); // Show Game Over screen
     }
+
 }
+
+
+
