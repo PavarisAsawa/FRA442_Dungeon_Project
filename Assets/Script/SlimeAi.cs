@@ -35,6 +35,7 @@ public class SlimeAi : MonoBehaviour
     public LayerMask obstacleMask;  // เลเยอร์ของวัตถุที่เป็นสิ่งกีดขวาง
 
     public List<Transform> visibleTargets = new List<Transform>(); // วัตถุที่มองเห็นได้
+    public int scoreValue = 10; // Score awarded for killing this slime
 
     [HideInInspector]
     public Transform targetTransform;
@@ -294,6 +295,9 @@ public class SlimeAi : MonoBehaviour
 
     void Die()
     {
+        // Notify the ScoreManager to add score
+        ScoreManager.Instance.AddScore(scoreValue);
+        
         // กำหนดให้ Slime ตาย
         Destroy(gameObject);  // ทำลาย GameObject เมื่อ Slime ตาย
     }
