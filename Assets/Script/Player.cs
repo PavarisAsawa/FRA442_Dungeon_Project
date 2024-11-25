@@ -10,7 +10,16 @@ public class Player : MonoBehaviour
     public float runSpeed = 10;
     public float sprintSpeed = 15;
 
+    public void AdjustMaxHealth(float newMaxHealth)
+    {
+        playerMaxHealth = newMaxHealth;
 
+        // Ensure current health doesn't exceed the new max
+        if (playerHealth > playerMaxHealth)
+        {
+            playerHealth = playerMaxHealth;
+        }
+    }
      public void DealDamageToSlime()
     {
         // ค้นหา Slime ที่ Player โจมตี (ใช้วิธีอ้างอิงจากการชนหรืออื่นๆ)

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject gameOverCanvasPrefab; // Assign the Game Over Canvas Prefab in the Inspector
+    public GameObject VictoryCanvasPrefab;
 
     private static GameManagerScript instance;
 
@@ -32,7 +33,19 @@ public class GameManagerScript : MonoBehaviour
             return instance;
         }
     }
+    public void ShowVictory()
+    {
+        if (VictoryCanvasPrefab != null)
+        {
+            // Play the victory music
+            AudioManager.Instance.PlayVictoryMusic();
+            Instantiate(VictoryCanvasPrefab);
 
+            // Make the cursor visible
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true; // Make the cursor visible
+        }
+    }
     // Function to show Game Over screen
     public void ShowGameOver()
     {

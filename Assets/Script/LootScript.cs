@@ -65,7 +65,7 @@ public class LootScript : MonoBehaviour
                     // เพิ่ม Shield ให้ Player
                     // PlayerShield.Instance.AddShield(15); // ตัวอย่างการเพิ่ม Shield
                     player.playerMaxHealth += BuffValue;
-                    player.playerHealth = player.playerMaxHealth;
+                    // player.playerHealth = player.playerMaxHealth;
                     break;
 
                 case LootType.Speed:

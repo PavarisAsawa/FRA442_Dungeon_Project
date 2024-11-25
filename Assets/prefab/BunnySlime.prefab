@@ -286,8 +286,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.29
-  m_Center: {x: 0, y: 0.29, z: 0}
+  m_Radius: 0.4
+  m_Center: {x: 0, y: 0.38, z: 0}
 --- !u!95 &2953771155840975922
 Animator:
   serializedVersion: 5
@@ -367,3 +367,9 @@ MonoBehaviour:
   playerDetected: 0
   attackCooldown: 1
   BloodEffect: {fileID: 4840070116914301980, guid: f54f68d5fea7ede43b0765713eef6812, type: 3}
+  dropItems:
+  - {fileID: 8988262988761834977, guid: a4777e22f39188c4b95da4a7c2f3123c, type: 3}
+  - {fileID: 3185046683831173329, guid: 0fbb7946d28d8844a8fa32546fa9f973, type: 3}
+  - {fileID: 4462769630705625759, guid: b8981688e21510a4b860ac97f65864a6, type: 3}
+  - {fileID: 6933864704710806561, guid: 8ee91c230cb3c08449f3e248bb3419f7, type: 3}
+  dropChance: 1

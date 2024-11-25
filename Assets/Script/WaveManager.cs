@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class WaveManager : MonoBehaviour
 {
     public WaveLevelUIManager waveUI; // Reference to the Wave UI manager
-    public Transform[] spawnPoints; // Array of spawn points
+    public Transform[] spawnPoints; // Array of spawn points for slimes
+    public Transform[] bossSpawnPoints; // Array of spawn points for the boss
     public GameObject[] slimePrefabs; // Array of different slime prefabs
     public GameObject bossPrefab; // Boss prefab
     public float spawnDelay = 1f; // Delay between spawns in seconds
+    public GameObject bossHealthBarPrefab; // Prefab for the boss health bar
 
     private int currentWave = 0; // Tracks the current wave
     private int maxWave = 5; // Maximum wave count
@@ -67,10 +69,10 @@ public class WaveManager : MonoBehaviour
     {
         return wave switch
         {
-            1 => 3,
-            2 => 6,
-            3 => 10,
-            4 => 15,
+            1 => 1,
+            2 => 1,
+            3 => 1,
+            4 => 1,
             _ => 0
         };
     }
@@ -83,13 +85,36 @@ public class WaveManager : MonoBehaviour
         activeEnemies.Add(randomSlime); // Add the spawned slime to the active enemies list
     }
 
-    // Spawn the boss at a random spawn point
-    private void SpawnBoss()
+    // Spawn the boss at a specific boss spawn point
+   private void SpawnBoss()
     {
-        Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject boss = Instantiate(bossPrefab, randomSpawnPoint.position, Quaternion.identity);
+        if (bossSpawnPoints.Length == 0)
+        {
+            Debug.LogError("No boss spawn points assigned!");
+            return;
+        }
+
+        // Spawn the boss
+        Transform randomBossSpawnPoint = bossSpawnPoints[Random.Range(0, bossSpawnPoints.Length)];
+        GameObject boss = Instantiate(bossPrefab, randomBossSpawnPoint.position, Quaternion.identity);
         activeEnemies.Add(boss); // Add the boss to the active enemies list
+
+        // แสดง Health Bar
+        GameObject healthBarInstance = Instantiate(bossHealthBarPrefab);
+        healthBarInstance.transform.SetParent(GameObject.Find("UIManeger").transform, false); // ทำให้ Health Bar อยู่ใน Canvas
+        healthBarInstance.SetActive(true); // เปิดการแสดง Health Bar
+
+        // ลิงก์ HealthBar กับ Boss
+        HealthBarBoss healthBarScript = healthBarInstance.GetComponent<HealthBarBoss>();
+        DragonAi bossScript = boss.GetComponent<DragonAi>();
+        if (healthBarScript != null && bossScript != null)
+        {
+            healthBarScript.Boss = bossScript; // ลิงก์ DragonAi กับ Health Bar
+        }
+
     }
+
+
 
     void Update()
     {

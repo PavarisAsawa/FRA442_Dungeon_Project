@@ -166,6 +166,8 @@ public class PlayerControl : MonoBehaviour
         velocity = Vector3.zero;
         characterController.Move(Vector3.zero);
 
+        // Play the game over music
+        AudioManager.Instance.PlayGameOverMusic();
         GameManagerScript.Instance.ShowGameOver(); // Show Game Over screen
     }
 
