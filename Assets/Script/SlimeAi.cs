@@ -51,6 +51,8 @@ public class SlimeAi : MonoBehaviour
     private WalkType previousWalkType;
 
     public GameObject BloodEffect;
+    public GameObject[] dropItems; // Array of item prefabs to drop
+    public float dropChance = 1f; // Drop chance (50% by default)
 
     void Start()
     {
@@ -315,6 +317,7 @@ public class SlimeAi : MonoBehaviour
         Destroy(gameObject);  // ทำลาย GameObject เมื่อ Slime ตาย
         // Notify the ScoreManager to add score
         ScoreManager.Instance.AddScore(scoreValue);
+        DropItem();
     }
     IEnumerator FindTargetsWithDelay(float delay)
     {
@@ -397,4 +400,26 @@ public class SlimeAi : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
+    private void DropItem()
+    {
+        Debug.Log("DropItem called!");
+
+        // ตรวจสอบว่ามี item ใน array หรือไม่
+        if (dropItems.Length > 0)
+        {
+            // เลือก item แบบสุ่ม
+            GameObject itemToDrop = dropItems[Random.Range(0, dropItems.Length)];
+            
+            // สร้าง item ณ ตำแหน่งของ Slime
+            Quaternion correctRotation = Quaternion.Euler(-90f, 0, 0); // ตั้ง rotation ให้ไอเท็มตั้งตรง
+            Instantiate(itemToDrop, transform.position, correctRotation);
+            Debug.Log("Dropped item: " + itemToDrop.name);
+        }
+        else
+        {
+            Debug.LogWarning("No items in dropItems array!"); // Debug หากไม่มี item ใน array
+        }
+    }
+
+
 }

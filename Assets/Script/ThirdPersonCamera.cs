@@ -12,6 +12,10 @@ public class ThirdPersonCamera : MonoBehaviour
 
     [SerializeField]
     private float distance = 20.0f;
+    [SerializeField]
+    private LayerMask collisionLayers; // Layers to check for collisions
+    [SerializeField]
+    private float collisionBuffer = 0.5f; // Buffer to prevent clipping
     private float currentX = 0.0f;
     private float currentY = 0.0f;
     private float sensivityX = 4.0f;
@@ -51,24 +55,27 @@ public class ThirdPersonCamera : MonoBehaviour
         Vector3 dir = new Vector3(0, 0, -distance);
         Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
 
-        // คำนวณตำแหน่งที่ต้องการของกล้องตามการหมุน
+        // Desired camera position based on rotation
         Vector3 desiredCameraPosition = lookAt.position + rotation * dir;
 
-        // Raycast เพื่อหาว่ามีสิ่งกีดขวางระหว่างผู้เล่นกับตำแหน่งกล้องที่ต้องการหรือไม่
+        // Raycast to check for collisions
+        Vector3 targetPosition;
         RaycastHit hit;
-        if (Physics.Raycast(lookAt.position, (desiredCameraPosition - lookAt.position).normalized, out hit, distance))
+        if (Physics.Raycast(lookAt.position, (desiredCameraPosition - lookAt.position).normalized, out hit, distance, collisionLayers))
         {
-            // ปรับระยะกล้องเพื่อให้ไม่ทะลุสิ่งกีดขวาง
-            camTransform.position = lookAt.position + (rotation * dir.normalized * hit.distance);
+            // Adjust position to avoid clipping, with a buffer
+            targetPosition = lookAt.position + (rotation * dir.normalized * (hit.distance - collisionBuffer));
         }
         else
         {
-            // หากไม่มีสิ่งกีดขวาง ใช้ตำแหน่งกล้องปกติ
-            camTransform.position = desiredCameraPosition;
+            // Use desired position if no obstacles
+            targetPosition = desiredCameraPosition;
         }
 
-        // ตั้งให้กล้องมองไปที่ผู้เล่น
-        camTransform.LookAt(lookAt.position);
-       }
+        // Smoothly move the camera to the target position
+        camTransform.position = Vector3.Lerp(camTransform.position, targetPosition, Time.deltaTime * 10f);
 
+        // Make the camera look at the target
+        camTransform.LookAt(lookAt.position);
+    }
 }

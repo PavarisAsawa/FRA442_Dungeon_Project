@@ -5,7 +5,7 @@ using System.Data.Common;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
-
+using UnityEngine.UI;
 public class DragonAi : MonoBehaviour
 {
     public enum DragonState { Init, Idle, Fly, Sick, Death, Eat, Dead }
@@ -23,7 +23,9 @@ public class DragonAi : MonoBehaviour
     public GameObject DragonFireBall;
     [HideInInspector] public Boolean playerNear = false;
     private Boolean isDead = false;
+    private Boolean isDamageable = true;
     public AudioClip DragonDeadSound;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -31,6 +33,7 @@ public class DragonAi : MonoBehaviour
         // ตรวจสอบว่าพบ GameObject หรือไม่
         if (player != null) Debug.Log("Player found: " + player.name);
         else Debug.LogWarning("Player not found! Make sure the Player object has the correct Tag.");
+
     }
 
     // Update is called once per frame
@@ -122,11 +125,21 @@ public class DragonAi : MonoBehaviour
 
     public void DragonTakeDamage(float damamge)
     {
+        if(!isDamageable) return;
         dragonHealth -= damamge;
+        isDamageable = false;
+        StartCoroutine("DelayDamage");
         if (dragonHealth <= 0)
         {
             DragonDie();
         }
+    }
+
+    IEnumerator DelayDamage()
+    {
+        float loopTimeLimit = 1f;
+        yield return new WaitForSeconds(loopTimeLimit);
+        isDamageable = true;
     }
     void DragonDie()
     {
@@ -143,6 +156,7 @@ public class DragonAi : MonoBehaviour
             audioSource.Play();
             Destroy(tempAudioSource, DragonDeadSound.length); // ลบ GameObject หลังเสียงเล่นจบ
         }
+        GameManagerScript.Instance.ShowVictory();
     }
 
     public void DragonFire()
@@ -171,5 +185,4 @@ public class DragonAi : MonoBehaviour
             Destroy(fireball, 5f);
         }
     }
-
 }
